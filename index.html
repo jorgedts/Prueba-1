@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+  <title>Pizzeria</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Pizzeria Duoc</a></h1>
+          <h2>La pizza es el mejor amigo del hambre</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Inicio</a></li>
+          <li><a href="examples.html">Promociones</a></li>
+          <li><a href="page.html">Pizzas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Buscar</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Buscar por pizzas....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Bienvenido a Pizzeria Duoc</h1>
+        <p>Disfruta de las mejores pizzas al mejor precio!
+           Cada dia una nueva promocion! </p>
+        <div class="carousel">
+          <div class="carousel-inner">
+              <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+              <div class="carousel-item">
+                 <a href="examples.html"> <img src="fotos/destacado1.jpg"></a>
+              </div>
+              <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+              <div class="carousel-item">
+                  <a href="examples.html"> <img src="fotos/destacado2.jpg"></a>
+              </div>
+              <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+              <div class="carousel-item">
+                 <a href="examples.html"> <img src="fotos/destacado3.jpg"></a>
+              </div>
+              <label for="carousel-3" class="carousel-control prev control-1">&lt;</label>
+              <label for="carousel-2" class="carousel-control next control-1">&gt;</label>
+              <label for="carousel-1" class="carousel-control prev control-2">&lt;</label>
+              <label for="carousel-3" class="carousel-control next control-2">&gt;</label>
+              <label for="carousel-2" class="carousel-control prev control-3">&lt;</label>
+              <label for="carousel-1" class="carousel-control next control-3">&gt;</label>
+              <ol class="carousel-indicators">
+                  <li>
+                      <label for="carousel-1" class="carousel-bullet">-</label>
+                  </li>
+                  <li>
+                      <label for="carousel-2" class="carousel-bullet">-</label>
+                  </li>
+                  <li>
+                      <label for="carousel-3" class="carousel-bullet">-</label>
+                  </li>
+              </ol>
+          </div>
+      </div>
+      <p></p>
+        <p>Promociones destacadas!</p>
+        <p></p>
+        <h3>Pizzas por categoria</h3>
+        <section class="ac-container">
+          <div>
+            <input id="ac-2" name="accordion-1" type="radio">
+            <label for="ac-2">Premium</label>
+            <article class="ac-medium">
+              <p>El mejor sabor de pizza al mejor precio.</p>
+            </article>
+          </div>
+          <div>
+            <input id="ac-3" name="accordion-1" type="radio">
+            <label for="ac-3">Vegetariana</label>
+            <article class="ac-large">
+              <p>Para todos aquellos que no pueden o no quieren consumir carne, esta es su seccion.</p>
+            </article>
+          </div>
+          <div>
+            <input id="ac-4" name="accordion-1" type="radio">
+            <label for="ac-4">Sabores del mundo</label>
+            <article class="ac-large">
+              <p>Pizzas con inspiracion de diferentes partes del mundo, directo a tu domicilio.</p>
+            </article>
+          </div>
+        </section>
+        <a href="page.html"> Revise con mas detalle nuestras pizzas aqui. </a>
+      </ul>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      Pizzeria Duoc &copy; | Fono: +56956744987 | Email: pizzeriaduoc@gmail.cl</a>
+    </div>
+  </div>
+</body>
+</html>
